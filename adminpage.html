@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>EQAS Login</title>
+		<title>Admin Page</title>
 		<!-- Required meta tags -->
 		<meta charset="utf-8" />
 		<meta
@@ -16,7 +16,7 @@
 			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" type="text/css" href="./css/basestyle.css" />
+		<link rel="stylesheet" href="css/basestyle.css" />
 		<script src="./script.js"></script>
 	</head>
 	<body>
@@ -30,11 +30,17 @@
 					alt=""
 				/>IRCS Mumbai: EQAS/Proficiency Test</a
 			>
+			<a class="btn btn-primary ml-auto" href="index.html" role="button"
+				>Log Out</a
+			>
 		</nav>
 		<div class="container h-100 align-items-center">
+			<div class="row justify-content-center mb-5 mt-0">
+				<h1 class="display-3">Admin Page</h1>
+			</div>
 			<div class="row justify-content-center">
 				<div class="form-group col-4">
-					<label for="username">Username</label>
+					<label for="username">New Username</label>
 					<input
 						type="text"
 						class="form-control"
@@ -45,7 +51,7 @@
 			</div>
 			<div class="row justify-content-center">
 				<div class="form-group col-4">
-					<label for="password">Password</label>
+					<label for="password">New Password</label>
 					<input
 						type="password"
 						class="form-control"
@@ -58,10 +64,21 @@
 				<div class="col-4">
 					<button
 						class="btn btn-primary btn-block"
-						onclick="login()"
+						onclick="register()"
 						type="submit"
 					>
-						Login
+						Register new user
+					</button>
+				</div>
+			</div>
+			<div class="row justify-content-center m-5">
+				<div class="col-6">
+					<button
+						class="btn btn-primary btn-block"
+						onclick="downloaddata()"
+						type="submit"
+					>
+						Download EQAS data and statistics
 					</button>
 				</div>
 			</div>

@@ -5,4 +5,10 @@ function login() {
 	window.location.href = "./diseases.html";
 }
 
-function validate() {}
+function register() {
+	alert("New user registered");
+}
+
+function downloaddata() {
+	alert("Downloading data");
+}
