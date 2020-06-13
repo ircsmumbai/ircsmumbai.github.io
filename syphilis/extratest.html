@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Extra Test report</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="../css/basestyle.css" type="text/css" />
+		<script type="text/javascript" src="./validatesyphilis.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+			<a class="navbar-brand" href="#"
+				><img
+					src="https://i.ibb.co/zGBP0Fs/redcrosslogo.png"
+					width="30"
+					height="30"
+					class="d-inline-block align-top"
+					alt=""
+				/>IRCS Mumbai: EQAS/Proficiency Test</a
+			>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a
+				class="btn btn-primary ml-auto"
+				href="../index.html"
+				role="button"
+				>Log Out</a
+			>
+		</nav>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 bg-primary text-light" align="center">
+					<h2>EXTRA TEST RESULT FORM</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 m-4 text-danger" align="center">
+					<p>ALL THE FIELDS ARE REQUIRED UNLESS DISABLED</p>
+				</div>
+			</div>
+			<table class="table table-striped table-borderless table-hover">
+				<thead class="table-danger">
+					<tr>
+						<th style="table-layout: fixed; width: 10vw;">
+							Sample Code
+						</th>
+						<th style="table-layout: fixed; width: 10vw;">
+							Absorbance Values or Sample Rate (only if
+							applicable) (A)
+						</th>
+						<th style="table-layout: fixed; width: 10vw;">
+							Cutoff Value or Cutoff Rate (only if applicable) (B)
+						</th>
+						<th style="table-layout: fixed; width: 10vw;">
+							Sample/Cutoff Ratio or Sample Rate/Cutoff (S/Co)
+							(A/B)
+						</th>
+						<th style="table-layout: fixed; width: 10vw;">
+							Test Interpretation e.g. Reactive
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<input
+								class="form-control"
+								type="text"
+								placeholder="EQAS SYPHILIS 19/1"
+							/>
+						</td>
+						<td>
+							<input class="form-control" type="text" />
+						</td>
+						<td>
+							<input class="form-control" type="text" />
+						</td>
+						<td>
+							<input class="form-control" type="text" />
+						</td>
+						<td>
+							<input class="form-control" type="text" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input
+								class="form-control"
+								type="text"
+								placeholder="EQAS SYPHILIS 19/2"
+							/>
+						</td>
+						<td>
+							<input class="form-control" type="text" />
+						</td>
+						<td>
+							<input class="form-control" type="text" />
+						</td>
+						<td>
+							<input class="form-control" type="text" />
+						</td>
+						<td>
+							<input class="form-control" type="text" />
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<table class="table table-striped table-borderless table-hover">
+				<thead>
+					<tr class="table-danger">
+						<th>
+							<label for="assay">Type of Assay Used</label>
+						</th>
+						<th>
+							<select class="form-control" id="assay">
+								<option>EIA</option>
+								<option>Rapid</option>
+								<option>Particle Agglutination</option>
+							</select>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td colspan="2" align="center">
+							ENTER DETAILS BELOW
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="assayname"
+								>Commercial name of Assay</label
+							>
+						</td>
+						<td>
+							<input
+								class="form-control"
+								type="text"
+								id="assayname"
+							/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="manuname">Name of Manufacturer</label>
+						</td>
+						<td>
+							<input
+								class="form-control"
+								type="text"
+								id="manuname"
+							/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="lotnum"
+								>Assay Kit Master Lot Number</label
+							>
+						</td>
+						<td>
+							<input
+								class="form-control"
+								type="number"
+								id="lotnum"
+							/>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="expdate">Expiry Date</label></td>
+						<td>
+							<input
+								class="form-control"
+								type="date"
+								id="expdate"
+							/>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<table class="table table-striped table-borderless table-hover">
+				<thead>
+					<tr class="table-danger">
+						<th>
+							Assay Conditions
+						</th>
+						<th>
+							Temperature (°C)
+						</th>
+						<th>
+							Time
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							Sample Incubation
+						</td>
+						<td><input class="form-control" type="number" /></td>
+						<!-- value returned will be in 24hr format -->
+						<td><input class="form-control" type="time" /></td>
+					</tr>
+					<tr>
+						<td>
+							Conjugate Incubation
+						</td>
+						<td><input class="form-control" type="number" /></td>
+						<!-- value returned will be in 24hr format -->
+						<td><input class="form-control" type="time" /></td>
+					</tr>
+					<tr>
+						<td>
+							Substrate Incubation
+						</td>
+						<td><input class="form-control" type="number" /></td>
+						<!-- value returned will be in 24hr format -->
+						<td><input class="form-control" type="time" /></td>
+					</tr>
+
+					<tr>
+						<td colspan="3">
+							<label for="incubation">
+								Please tick the incubation condition that
+								applies. The microplate was incubated:
+							</label>
+							<select class="form-control" id="incubation">
+								<option>in a water bath</option>
+								<option>in an incubator</option>
+								<option>on a bench</option>
+								<option>Other (give details)</option>
+							</select>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<table class="table table-striped table-borderless">
+				<tbody>
+					<tr>
+						<td height="23" align="left" valign="bottom">
+							Name of Operator
+						</td>
+						<td><input class="form-control" type="text" /></td>
+					</tr>
+					<tr>
+						<td height="23" align="left" valign="bottom">
+							Date
+						</td>
+						<td><input class="form-control" type="date" /></td>
+					</tr>
+					<tr>
+						<td height="23" align="left" valign="bottom">
+							Comments
+						</td>
+						<td><input class="form-control" type="text" /></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="row m-5">
+				<div class="col-6">
+					<button
+						type="button"
+						class="btn btn-primary btn-block"
+						value="validate"
+						onclick="validate()"
+					>
+						Validate
+					</button>
+				</div>
+				<div class="col-6">
+					<a href="./statusreport.html">
+						<button
+							type="submit"
+							class="btn btn-primary btn-block"
+							value="submit"
+							id="submitbtn"
+							disabled
+							data-toggle="tooltip"
+							data-placement="top"
+							title="Please validate before continuing"
+						>
+							Next
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
