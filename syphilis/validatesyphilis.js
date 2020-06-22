@@ -23,6 +23,28 @@ function IsCondition(e) {
 }
 
 function validate() {
+	var hiv1 = document.getElementById("HIV_1").value;
+	var hiv2 = document.getElementById("HIV_2").value;
+	var lab = document.getElementById("labId").value;
+	var arr = [hiv1, hiv2];
+	for (var i = 0; i < 2; ++i) {
+		if (
+			((arr[i] >= 0.0 && arr[i] < 50000.0) ||
+				arr[i] == "R" ||
+				arr[i] == "NR" ||
+				arr[i] == "") &&
+			lab != ""
+		) {
+			continue;
+		} else
+			alert(
+				"Enter only numerical values or R,NR for reactive/non-reactive in given fields. For no entry, put one space.."
+			);
+		return;
+	}
+	alert(
+		"Entries are valid. Fill the details below and click submit at the bottom."
+	);
 	document.getElementById("submitbtn").disabled = false;
 }
 
