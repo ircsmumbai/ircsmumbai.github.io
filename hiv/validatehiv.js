@@ -34,6 +34,14 @@ function immunoassay_next() {
 		window.location.href = "./statusreport.html";
 	}
 }
+function extratest_next() {
+	var isYes = document.getElementById("extrayes").checked;
+	if (isYes === true) {
+		window.location.href = "./extratest.html";
+	} else {
+		window.location.href = "./statusreport.html";
+	}
+}
 
 function submit() {
 	window.location.href = "../index.html";

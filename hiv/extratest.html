@@ -370,6 +370,33 @@
 					</tr>
 				</tbody>
 			</table>
+			<div class="row m-4">
+				<div class="col">Do you have an extra test report?</div>
+				<div class="col">
+					<div class="form-check form-check-inline">
+						<input
+							class="form-check-input"
+							type="radio"
+							id="extrayes"
+							value="yes"
+							name="extratest"
+						/>
+						<label class="form-check-label" for="extrayes"
+							>Yes</label
+						>
+					</div>
+					<div class="form-check form-check-inline">
+						<input
+							class="form-check-input"
+							type="radio"
+							id="extrano"
+							value="no"
+							name="extratest"
+						/>
+						<label class="form-check-label" for="extrano">No</label>
+					</div>
+				</div>
+			</div>
 			<table class="table table-striped table-borderless">
 				<tbody>
 					<tr>
@@ -404,20 +431,19 @@
 					</button>
 				</div>
 				<div class="col-6">
-					<a href="./statusreport.html">
-						<button
-							type="submit"
-							class="btn btn-primary btn-block"
-							value="submit"
-							id="submitbtn"
-							disabled
-							data-toggle="tooltip"
-							data-placement="top"
-							title="Please validate before continuing"
-						>
-							Next
-						</button>
-					</a>
+					<button
+						type="submit"
+						class="btn btn-primary btn-block"
+						value="submit"
+						id="submitbtn"
+						disabled
+						data-toggle="tooltip"
+						data-placement="top"
+						title="Please validate before continuing"
+						onclick="extratest_next()"
+					>
+						Next
+					</button>
 				</div>
 			</div>
 		</div>
